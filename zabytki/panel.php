@@ -29,7 +29,7 @@ a:hover { color: red }
 <?php
 $login=$_SESSION['login']=$_POST['login'];
 $haslo=$_SESSION['haslo']=$_POST['haslo'];
-if($login=="arek" && $haslo=="EinbrechteRo2")
+if($login=="arek" && $haslo=="EinbrechteRo1")
 {
 	$_SESSION['logowanie']="tak";
 }
