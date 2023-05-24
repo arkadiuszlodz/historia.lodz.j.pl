@@ -1,0 +1,23 @@
+order deny,allow
+allow from all
+#deny from xxx.xxx.xxx.xxx  #blokada dostepu z tego adresu do mojej strony
+
+ 	ErrorDocument 400 /errors/400.html
+ 	ErrorDocument 401 /errors/401.html
+ 	ErrorDocument 403 /errors/403.html
+ 	ErrorDocument 404 /errors/404.html
+ 	ErrorDocument 500 /errors/500.html
+
+			RewriteEngine on
+			RewriteCond %{REQUEST_FILENAME} !-f
+			RewriteCond %{REQUEST_FILENAME} !-d
+			
+			#Redirect 301 /domowa/index.php http://arkadiuszstrona.pl/domowa
+			
+			#RewriteRule ^[[:word:]]*.(jpg|jpeg|gif|bmp|png)$ historia.lodz.j.pl [NC,F]
+				RewriteRule ^historia-lodzi/ historia.html [NC,L]
+			RewriteRule ^zabytki-lodzi/ /zabytki/zabytki.php [NC,L]
+				RewriteRule ^zabytki/panel-sterowania/ /zabytki/panel.php [NC,L]
+		
+
+			#RewriteRule ([^-]+)/?$ index.php?podstrona=$1

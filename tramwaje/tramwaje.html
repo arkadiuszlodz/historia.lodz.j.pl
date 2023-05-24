@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	 <script>
+		function muzyka(){
+			var snd = new Audio("keyboard_Przasniczka_Moniuszko.mp3");
+			snd.loop = true;
+			snd.autoplay = true; //działa w Operze i Edge
+			
+			
+			document.getElementById("bstop").onclick = function () { snd.pause(); };
+
+			document.getElementById("bplay").onclick = function () { snd.play(); };
+		}
+		
+		function film(url){
+			var video = new Video(url, true);
+			video.height = 240;
+			video.width = 320;
+			//video.controls = "controls";
+			//video.autoplay = true;  //działa w Operze i Edge
+			//video loop = true;
+			video.volume = 1;
+			
+			document.getElementById("bstop").onclick = function () { video.pause(); };
+
+			document.getElementById("bplay").onclick = function () { video.play();};
+		}
+		
+		function Video(src, append) {
+			  var v = document.createElement("video");
+			  if (src != "") {
+				v.src = src;
+			  }
+			  if (append == true) {
+				document.body.appendChild(v);
+			  }
+			  return v;
+		}
+    </script>	
+
+</head>
+<body onload="film('tramwaje.mp4')">
+	<!--<video id="film" width="320" height="240" autoplay muted loop controls>
+		<source src="tramwaje.mp4" type="video/mp4">
+		Ta przeglądarka nie wyświetla tego filmu ...
+	</video>-->
+	<div style="position:fixed; top:260px;">
+		<button id="bstop">Stop</button>
+		<button id="bplay">Play</button>	
+	</div>
+</body>
+</html>

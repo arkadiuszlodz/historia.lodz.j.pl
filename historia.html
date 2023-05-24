@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Historia Łodzi</title>
+	<link rel="stylesheet" href="\style\style2.css">
+	<style>
+		body{
+			//font-family:Tahoma, Verdana;
+			font-family:sans-serif;
+			font-size:18px;
+			background-color:#dec28e;
+		}
+		a{
+			color:#19a6da;
+		}
+		#header {
+            margin-right: 60px;
+			margin-left:60px;
+		}
+
+		.tabela_1{
+			border-left:1px solid navy;
+			//border-right:1px solid navy;
+			border-top:1px solid navy;
+			width:200px;
+			height:35px;
+			text-align:center;
+		}
+		.tabela_2{
+			border-right:1px solid navy;
+			border-top:1px solid navy;
+			width:200px;
+			text-align:center;
+		}
+		.tabela_3{
+			border-left:1px solid navy;
+			border-top:1px solid navy;
+			border-bottom:1px solid navy;
+			width:200px;
+			height:35px;
+			text-align:center;
+		}
+		.tabela_4{
+			//border-left:1px solid navy;
+			border-right:1px solid navy;
+			border-top:1px solid navy;
+			border-bottom:1px solid navy;
+			width:200px;
+			text-align:center;
+		}
+		
+		.zabytki_1 {
+		 color:#19a6da;
+		}
+		
+		#strzalka {
+		  margin-left:auto;
+		  margin-right:auto;
+		  width: 15px;
+		  height: 50px;
+		  background: red;
+		  background-image:url("/element-paska.gif");
+		  transition: width 10s;
+		  
+		  trasnition-timing-function: cubic-bezier(0, .52, 0, 1);
+		  text-align:center; /* aby obrazek się przesuwał z divem */
+		}
+
+		#strzalka2 {
+		  position:fixed;
+		  right:40px;
+		  top:20px;
+		  margin-left:auto;
+		  margin-right:auto;
+		  font-size:16px;
+		  width: 10px;
+		  height: 20px;
+		  background: red;
+		  transition: width 4s;
+		  
+		  trasnition-timing-function: cubic-bezier(0, .52, 0, 1);
+		  text-align:center; /* aby obrazek się przesuwał z divem */
+		  
+		  font-family:"Times New Roman", Times, serif;
+		}
+		
+		#tramwaje {
+			position:fixed;
+			top:47px;
+			right:40px; 
+			background-color:white;
+			display:none;
+			text-align:right;
+		}
+		
+		#zwiniety{
+			display:none;
+			width:90%;
+			margin:0 auto;
+		}
+
+		#zwiniety p span {
+			display: block;
+			float: left;
+			margin-right: 1px;
+			text-transform: uppercase;
+			font-size: 14px;
+			width: 13px;
+			text-align: center;
+			padding: 5px;
+			border: 1px solid #AAA;
+			line-height: 1.5em;
+			border-radius: 6px 0 6px 0;
+			background-color:white;
+			font-weight:bold;
+		}
+	</style>
+	<script language="javascript">
+		function powieksz(x){
+			x.style.display="block";
+		}
+		function schowaj(x){
+			x.style.display="none";
+		}
+		function pasek_load(x) {
+				x.style.height = "50px";
+				x.style.width = "1000px";
+				
+				setTimeout(function(){pasek_cofnij(x);},20000);
+		}
+		function pasek_cofnij(x) {
+				x.style.height = "50px";
+				x.style.width = "15px";
+		}
+		function pasek_load2(x,y) {
+				x.style.display="block";
+				x.style.height = "20px";
+				x.style.width = "400px";
+				
+				setTimeout(function(){powieksz(y);},5000);
+		}
+	</script>
+</head>
+<body onload="setInterval(function(){pasek_load(strzalka);}, 40000); setTimeout(function(){pasek_load2(strzalka2,tramwaje);}, 10000)">
+	<div style="text-align:center;">
+		<table cellspacing="0" cellpadding="0" border="0" style="margin-left:auto; margin-right:auto;">
+		<tr>
+			<td style="left:10px; position:absolute; top:40px;"><div style="background:#f2f2f2; widht:250px; height:60px; padding-top:35px; padding-left:10px; padding-right:10px;"><a href="http://historia.lodz.j.pl/zabytki-lodzi/">Powrót do strony zabytki Łodzi</a></div></td>
+			<td><img src="/gradient.gif"><img src="/logo2.jpg"><img src="/gradient.gif"></td>
+			<td><div id="strzalka2">&nbsp;ł a d o w a n i e &nbsp; f i l m u&nbsp;</div></td>
+			<td style="position:fixed; right:0px;"><div id="zwiniety"><a href="javascript:void" onclick="pasek_load2(strzalka2,tramwaje); schowaj(zwiniety)"><p><span>r o z w i ń &nbsp; f i l m</span></p></a></div></td>
+		</tr>
+		</table>
+	</div>
+	<br><br>
+	<header id="header">
+		Łódź – miasto z tradycją sięgającą XV wieku.
+		<br><br>
+		Łódź została założona w 1414 roku na Wzniesieniach Łódzkich. Ostroga to pierwotna nazwa. Tak nazwana została od rzeki Ostrogi,
+		starszej nazwy rzeki Łódki. W miarę upływu czasu osada rozrosła się do wielkości miasta zmieniając nazwę na „ Łodzia”. 
+		Zmianę nazwy dokonano w 1423 roku. Nazwa wsi położonej w okolicy dla odróżnienia od nazwy miasta została zmieniona na Stara Łodzia lub na Stara Wieś.
+		<br><br>
+		Miasto Łódź kształtuje się przez ponad 600 lat i przez ten okres powstawały rózne style architektoniczne.
+		<br><br>
+		Miasto do XIX wieku miało charakter rolniczy. Budynki były drewniane, a podwórka za nimi 
+		przypominały obszar wiejski z pasącymi się zwierzętami. Z tamtych czasów zachowała się 
+		tylko jedna drewniana budowla 
+		<a href="javascript:void" id="href_zabytki_1" onclick="powieksz(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),schowaj(img_zabytki_4),
+		schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_10),
+		schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),
+		schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">kościół św. Józefa</a> obecnie cała przeniesiona w inne miejsce miasta.
+		<br>
+		Dopiero po przeobrażeniu jej przez łódzkich fabrykantów w Łódź fabryczną Łódź ewoluowała do miasta przemysłowego. 
+		Zaczęły wówczas powstawać fabryki, pałace fabrykantów i osiedla robotnicze. Efekt ten był zamiarem działań 
+		oświeconych władz Królestwa Polskiego w celu podniesienia kraju z zacofania gospodarczego. Był to świetny 
+		pomysł z racji tego, że w Łodzi znajdowało się dużo rzek i był możliwy rozwój zakładów włókienniczych, 
+		których łódzkim prekursorem był 
+		<a href="javascript:void" id="href_zabytki_2" onclick="powieksz(img_zabytki_2),schowaj(img_zabytki_1),schowaj(img_zabytki_3),schowaj(img_zabytki_4),
+		schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_10),
+		schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),
+		schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">Ludwik Geyer</a>.
+		<br>
+		Łódź zaczęła się szybko rozwijać, w drugiej połowie XIX wieku była już podzielona na Stare Miasto ze Starym Rynkiem 
+		oraz Nowe Miasto z Nowym Rynkiem. Nowe Miasto nazywane było przez rdzennych mieszczan Przedmieściem. Nowy Rynek 
+		otaczały ulice nazywane od kierunków świata – Północna (w tamtych czasach Graniczna), Południowa (dziś Próchnika i Rewolucji 1905 r), 
+		Wschodnia i Zachodnia. Stare i Nowe Miasto łączyła ulica Nowomiejska zwana tak od 1826 roku. 
+		Układ południkowy Łodzi jest ulicą Nowomiejską oraz Piotrkowską – nazwaną od 1826 roku od nazwy traktu od Piotrkowa z 1821 roku. 
+		Układ północny Nowego Miasta to ulice Północna i Ogrodowa, a na południu zamykała je ulica Cegielniana zwana Podcegielnianą 
+		lub inaczej Pod Cegielnię. Od 1822 roku gwałtownie przeobraziło się Stare Miasto, które stało się siedzibą ludności 
+		wyznania mojżeszowego. Nazwy stworzone przez ludność wyznania mojżeszowego w tamtych latach nie odnajdziemy już na żadnych planach. 
+		Nazwy te różniły się od nazw polskich.
+		<br><br>
+		Porównanie nazw ulic po polsku i ludności wyznania mojżeszowego:
+		<br><br>
+		<div style="position:relative; left:100px; width:500px;">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td class="tabela_1">Zgierska</td>
+				<td class="tabela_2">Zgierze gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_1">Brzezińska</td>
+				<td class="tabela_2">Brzeziner gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_1">Lutomierska</td>
+				<td class="tabela_2">Hoteł gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_1">Podrzeczna</td>
+				<td class="tabela_2">Jidisze gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_1">Drewnowska</td>
+				<td class="tabela_2">Pojlisze gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_3">Wolborska</td>
+				<td class="tabela_4">Szil gas</td>
+			</tr>
+		</table>
+		</div>
+		<br>
+		Przy ulicy Wolborskiej powstała <a href="javascript:void" id="href_zabytki_3" onclick="powieksz(img_zabytki_3),schowaj(img_zabytki_1),
+		schowaj(img_zabytki_2),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),
+		schowaj(img_zabytki_9),schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),
+		schowaj(img_zabytki_15),schowaj(img_zabytki_16),schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">synagoga w stylu mauretańskim</a>
+		<br><br>
+		W latach 1824 – 1828 na wschód od Nowego Miasta rozwijała się <a href="javascript:void" id="href_zabytki_4" onclick="powieksz(img_zabytki_4),
+		schowaj(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),
+		schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),
+		schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),
+		schowaj(img_zabytki_20)">nowa osada przemysłowa dla tkaczy lnu i 
+		bawełny nazwana Łódką</a> i ciągnęła się wzdłuż ulicy Piotrkowskiej od ulicy Dzielnej do ulicy Pabianickiej. 
+		Wówczas przecznice Piotrkowskiej łączyły rozdzielone ogrodami ciągi domów i występowały mniej więcej co 300 m. 
+		Na ulicy Piotrkowskiej tuż za ulicą Główną, na obszarze dzisiejszego Centralu przy ulicy Żwirki znajdował się 
+		<a href="javascript:void" id="href_zabytki_5" onclick="powieksz(img_zabytki_5),schowaj(img_zabytki_1),schowaj(img_zabytki_2),
+		schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),
+		schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),schowaj(img_zabytki_15),
+		schowaj(img_zabytki_16),schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">prywatny park A. Hentschla Paradyz</a>. 
+		<br><br>
+		W 1841 roku pojawił się na planach miasta Plac Fabryczny na zachód od Piotrkowskiej, a w głębi znajdował się 
+		<a href="javascript:void" id="href_zabytki_6" onclick="powieksz(img_zabytki_6),schowaj(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),
+		schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_10),
+		schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),
+		schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">szpital miejski św. Aleksandra</a>. Obecnie znajduje się tu, po przebudowie, Seminarium Duchowne. 
+		W 1902 roku wzniesiono tu kościół parafialny św. Stanisława Kostki – czyli dzisiejsza katedra. 
+		Plac Fabryczny zmienił nazwę na Plac Katedralny (od kilku lat im. Jana Pawła II). 
+		W tamtych czasach przy obecnej ulicy Tymienieckiego na wschodnim kierunku Piotrkowskiej powstała <a href="javascript:void" id="href_zabytki_7" onclick="powieksz(img_zabytki_7),
+		schowaj(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),
+		schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),
+		schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),
+		schowaj(img_zabytki_20)">Fabryka Geyera</a>, 
+		której to właściciel w 1839 roku uruchomił w Łodzi <a href="javascript:void" id="href_zabytki_8" onclick="powieksz(img_zabytki_8),schowaj(img_zabytki_1),
+		schowaj(img_zabytki_2),schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),
+		schowaj(img_zabytki_9),schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),
+		schowaj(img_zabytki_15),schowaj(img_zabytki_16),schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">pierwszą maszynę parową</a>.
+		Piotrkowska kończy się na <a href="javascript:void" id="href_zabytki_9" onclick="powieksz(img_zabytki_9),schowaj(img_zabytki_1),schowaj(img_zabytki_2),
+		schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_8),schowaj(img_zabytki_10),
+		schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),
+		schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">Górnym Rynku</a>, który istniał na planie z 1842 roku i był wtedy nazwany po prostu drugim rynkiem. 
+		Jeszcze przed wojną Górny Rynek nazwany był Placem Reymonta – inaczej Rynkiem Geyera.
+		<br><br>
+		Z XIX wieku zabytkami są m.in. <a href="javascript:void" id="href_zabytki_10" onclick="powieksz(img_zabytki_10),schowaj(img_zabytki_1),
+		schowaj(img_zabytki_2),schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),
+		schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),
+		schowaj(img_zabytki_15),schowaj(img_zabytki_16),schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">las miejski – dziś Park im. ks. J. Poniatowskiego</a>, 
+		<a href="javascript:void" id="href_zabytki_18" onclick="powieksz(img_zabytki_18),schowaj(img_zabytki_2),schowaj(img_zabytki_3),schowaj(img_zabytki_4),
+		schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_10),
+		schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),
+		schowaj(img_zabytki_17),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">teatr polski</a> 
+		z 1901 roku otwarty na cześć noblisty Sienkiewicza, <a href="javascript:void" id="href_zabytki_11" onclick="powieksz(img_zabytki_11),
+		schowaj(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),
+		schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_10),schowaj(img_zabytki_12),schowaj(img_zabytki_13),
+		schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),
+		schowaj(img_zabytki_20)">ratusz</a> (1827) i <a href="javascript:void" id="href_zabytki_19" onclick="powieksz(img_zabytki_19),schowaj(img_zabytki_2),
+		schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),
+		schowaj(img_zabytki_9),schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),
+		schowaj(img_zabytki_15),schowaj(img_zabytki_16),schowaj(img_zabytki_17),schowaj(img_zabytki_20)">kościół ewangelicki</a>, 
+		<a href="javascript:void" id="href_zabytki_12" onclick="powieksz(img_zabytki_12),schowaj(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),
+		schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),
+		schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_13),schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),
+		schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">jatki Macroniego na Starym i Nowym Rynku</a>, 
+		<a href="javascript:void" id="href_zabytki_13" onclick="powieksz(img_zabytki_13),schowaj(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),
+		schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),
+		schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),
+		schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">dom Jakuba Petersa</a> (1839), 
+		<a href="javascript:void" id="href_zabytki_20" onclick="powieksz(img_zabytki_20),
+		schowaj(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),
+		schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),
+		schowaj(img_zabytki_13),schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_16),schowaj(img_zabytki_17),schowaj(img_zabytki_18),
+		schowaj(img_zabytki_19)">Bielnik Kopischa</a> (1824 – 1828), 
+		<a href="javascript:void" id="href_zabytki_14" onclick="powieksz(img_zabytki_14),schowaj(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),
+		schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),
+		schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_15),schowaj(img_zabytki_16),
+		schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">Biała Fabryka Geyera</a> (1835 – 1837) i 
+		<a href="javascript:void" id="href_zabytki_15" onclick="powieksz(img_zabytki_15),schowaj(img_zabytki_1),schowaj(img_zabytki_2),schowaj(img_zabytki_3),
+		schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),schowaj(img_zabytki_9),
+		schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),schowaj(img_zabytki_16),
+		schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">dworek Geyera</a> (1833). 
+		<br><br>
+		Do lat 20-tych XIX wieku Łódź posiada zabudowę wielkomiejską oraz osiedla robotnicze. 
+		Łódź – wtedy miasto przemysłowe z masowo napływającymi w celu polepszenia warunków życia ludźmi zaczęła się 
+		sukcesywnie rozrastać. Na początku XX wieku powstała łódzka secesja, która kształtowała wielkomiejski charakter miasta. 
+		Obecnie w Łodzi znajdziemy dużo <a href="javascript:void" id="href_zabytki_16" onclick="powieksz(img_zabytki_16),schowaj(img_zabytki_1),
+		schowaj(img_zabytki_2),schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),
+		schowaj(img_zabytki_8),schowaj(img_zabytki_9),schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),
+		schowaj(img_zabytki_14),schowaj(img_zabytki_15),schowaj(img_zabytki_17),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">
+		zabytkowych kamienic właśnie z okresów secesji</a>. Od czasów miedzywojennych do końca XX wieku 
+		Łódź awansowała społeczno – administracyjnie. Problemy gospodarcze miasta pod koniec lat 90-tych spowodowały zmianę z miasta 
+		drugiego pod względem wielkości w Polsce na trzecie, co nadal jest utrzymane do 2021 roku. Mimo tego Łódź jest jednym z 
+		największych miast w Polsce, której charakter miasta przemysłowego - włókienniczego zmienił się i Łódź stała się miastem studenckim oraz handlowym. 
+		Powstała tutaj bardzo duża ilość centrów handlowych, nowoczesnych hoteli i zmodernizowano Dworzec Łódź Fabryczna na najnowocześniejszy w Polsce, 
+		który będzie w przyszłości połączony metrem z dworcem Łódź Kaliska. W szkolnictwie wyższym powstały nowe dziedziny nauki  np. informatyka, automatyka. 
+		Znajduje się tutaj Politechnika Łódzka, Uniwersytet Łódzki, Uniwersytet Medyczny, 
+		Akademia Filmowa oraz szkolnictwo wyższe prywatne, duża ilość szpitali z Centrum Zdrowia Matki Polki, które było do końca XX wieku 
+		najnowocześniejszym szpitalem w tej części Europy.
+		Łódź ma dobrze rozwiniętą komunikację miejską oraz staje się coraz to ładniejszym miastem ze 
+		<a href="javascript:void" id="href_zabytki_17" onclick="powieksz(img_zabytki_17),schowaj(img_zabytki_1),schowaj(img_zabytki_2),
+		schowaj(img_zabytki_3),schowaj(img_zabytki_4),schowaj(img_zabytki_5),schowaj(img_zabytki_6),schowaj(img_zabytki_7),schowaj(img_zabytki_8),
+		schowaj(img_zabytki_9),schowaj(img_zabytki_10),schowaj(img_zabytki_11),schowaj(img_zabytki_12),schowaj(img_zabytki_13),schowaj(img_zabytki_14),
+		schowaj(img_zabytki_15),schowaj(img_zabytki_16),schowaj(img_zabytki_18),schowaj(img_zabytki_19),schowaj(img_zabytki_20)">stale odrestaurowywanymi zabytkami</a>. 
+		Jest nazwane miastem czterech kultur.
+	</header>
+	<footer>
+		<br>
+		<div style="background:#f2f2f2; widht:0px; height:60px; padding-top:35px; padding-left:10px; padding-right:10px;">
+			<a href="http://historia.lodz.j.pl/zabytki-lodzi/">Powrót do strony zabytki Łodzi</a>
+			<p id="strzalka"></p>
+		</div>
+		<br><br>
+	</footer>
+
+	<div id="tramwaje">
+		<a href="#" onclick="schowaj(tramwaje); schowaj(strzalka2); powieksz(zwiniety)">z a m k n i j</a><br>
+		<iframe name="iframe1" id="iframe1" src="\tramwaje\tramwaje.html" 
+			frameborder="0" border="0" cellspacing="0"
+			style="border-style: none;width: 340px; height: 300px;">
+		</iframe>
+	</div>
+
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_1"><a href="#" onclick="schowaj(img_zabytki_1)"><img id="img_zabytki_1" src="\zabytki2\kosciol_sw_jozefa.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:50px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_2"><a href="#" onclick="schowaj(img_zabytki_2)"><img id="img_zabytki_2" src="\zabytki2\ludwik_geyer.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:350px;"></figure></a></div></div>		
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_3"><a href="#" onclick="schowaj(img_zabytki_3)"><img id="img_zabytki_3" src="\zabytki2\synagoga.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_4"><a href="#" onclick="schowaj(img_zabytki_4)"><img id="img_zabytki_4" src="\zabytki2\brak.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_5"><a href="#" onclick="schowaj(img_zabytki_5)"><img id="img_zabytki_5" src="\zabytki2\brak.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_6"><a href="#" onclick="schowaj(img_zabytki_6)"><img id="img_zabytki_6" src="\zabytki2\szpital_ws_aleksandra.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:500px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_7"><a href="#" onclick="schowaj(img_zabytki_7)"><img id="img_zabytki_7" src="\zabytki2\fabryka_geyera.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:50px; width:500px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_8"><a href="#" onclick="schowaj(img_zabytki_8)"><img id="img_zabytki_8" src="\zabytki2\maszyna_parowa.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:500px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_9"><a href="#" onclick="schowaj(img_zabytki_9)"><img id="img_zabytki_9" src="\zabytki2\brak.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_10"><a href="#" onclick="schowaj(img_zabytki_10)"><img id="img_zabytki_10" src="\zabytki2\brak.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_11"><a href="#" onclick="schowaj(img_zabytki_11)"><img id="img_zabytki_11" src="\zabytki2\ratusz.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_12"><a href="#" onclick="schowaj(img_zabytki_12)"><img id="img_zabytki_12" src="\zabytki2\jatki_makroniego.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:500px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_13"><a href="#" onclick="schowaj(img_zabytki_13)"><img id="img_zabytki_13" src="\zabytki2\brak.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_14"><a href="#" onclick="schowaj(img_zabytki_14)"><img id="img_zabytki_14" src="\zabytki2\fabryka_geyera.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:500px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_15"><a href="#" onclick="schowaj(img_zabytki_15)"><img id="img_zabytki_15" src="\zabytki2\brak.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_16"><a href="#" onclick="schowaj(img_zabytki_16)"><img id="img_zabytki_16" src="\zabytki2\brak.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_17"><a href="#" onclick="schowaj(img_zabytki_17)"><img id="img_zabytki_17" src="\zabytki2\brak.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_18"><a href="#" onclick="schowaj(img_zabytki_18)"><img id="img_zabytki_18" src="\zabytki2\brak.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_19"><a href="#" onclick="schowaj(img_zabytki_19)"><img id="img_zabytki_19" src="\zabytki2\kosciol_ewangelicki.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:300px;"></figure></a></div></div>
+	<div class="hover01 column"><figure style="widht:0px; height:0px;"><div id="zabytki_20"><a href="#" onclick="schowaj(img_zabytki_20)"><img id="img_zabytki_20" src="\zabytki2\bielnik_kopischa.jpg" style="display:none; z-index:10; position:fixed; top:25px; left:600px; width:500px;"></figure></a></div></div>
+	
+</body>

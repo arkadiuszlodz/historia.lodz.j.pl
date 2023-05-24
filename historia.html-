@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Historia Łodzi</title>
+	<style>
+		body{
+			//font-family:Tahoma, Verdana;
+			font-family:sans-serif;
+			font-size:18px;
+			background-color:#dec28e;
+		}
+		.zabytki_1{
+			color:#19a6da;
+		}
+		a{
+			color:#19a6da;
+		}
+		.tabela_1{
+			border-left:1px solid navy;
+			//border-right:1px solid navy;
+			border-top:1px solid navy;
+			width:200px;
+			height:35px;
+			text-align:center;
+		}
+		.tabela_2{
+			border-right:1px solid navy;
+			border-top:1px solid navy;
+			width:200px;
+			text-align:center;
+		}
+		.tabela_3{
+			border-left:1px solid navy;
+			border-top:1px solid navy;
+			border-bottom:1px solid navy;
+			width:200px;
+			height:35px;
+			text-align:center;
+		}
+		.tabela_4{
+			//border-left:1px solid navy;
+			border-right:1px solid navy;
+			border-top:1px solid navy;
+			border-bottom:1px solid navy;
+			width:200px;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align:center;">
+		<img src="/gradient.gif"><img src="/logo2.jpg"><img src="/gradient.gif">
+	</div>
+
+	<header>
+		Łódź – miasto z tradycją sięgającą XV wieku.
+		<br><br>
+		Łódź została założona w 1414 roku na Wzniesieniach Łódzkich. Ostroga to pierwotna nazwa. Tak nazwana została od rzeki Ostrogi,
+		starszej nazwy rzeki Łódki. W miarę upływu czasu osada rozrosła się do wielkości miasta zmieniając nazwę na „ Łodzia”. 
+		Zmianę nazwy dokonano w 1423 roku. Nazwa wsi położonej w okolicy dla odróżnienia od nazwy miasta została zmieniona na Stara Łodzia lub na Stara Wieś.
+		<br><br>
+		Miasto Łódź kształtuje się przez ponad 600 lat i przez ten okres powstawały rózne style architektoniczne.
+		<br><br>
+		Miasto do XIX wieku miało charakter rolniczy. Budynki były drewniane, a podwórka za nimi 
+		przypominały obszar wiejski z pasącymi się zwierzętami. Z tamtych czasów zachowała się 
+		tylko jedna drewniana budowla <u class="zabytki_1">kościół św. Józefa</u> obecnie cała przeniesiona w inne miejsce miasta.
+		<br>
+		Dopiero po przeobrażeniu jej przez łódzkich fabrykantów w Łódź fabryczną Łódź ewoluowała do miasta przemysłowego. 
+		Zaczęły wówczas powstawać fabryki, pałace fabrykantów i osiedla robotnicze. Efekt ten był zamiarem działań 
+		oświeconych władz Królestwa Polskiego w celu podniesienia kraju z zacofania gospodarczego. Był to świetny 
+		pomysł z racji tego, że w Łodzi znajdowało się dużo rzek i był możliwy rozwój zakładów włókienniczych, 
+		których łódzkim prekursorem był <u class="zabytki_1">Ludwik Geyer</u>.
+		<br><br>
+		Łódź zaczęła się szybko rozwijać, w drugiej połowie XIX wieku była już podzielona na Stare Miasto ze Starym Rynkiem 
+		oraz Nowe Miasto z Nowym Rynkiem. Nowe Miasto nazywane było przez rdzennych mieszczan Przedmieściem. Nowy Rynek 
+		otaczały ulice nazywane od kierunków świata – Północna (w tamtych czasach Graniczna), Południowa (dziś Próchnika i Rewolucji 1905 r), 
+		Wschodnia i Zachodnia. Stare i Nowe Miasto łączyła ulica Nowomiejska zwana tak od 1826 roku. 
+		Układ południkowy Łodzi jest ulicą Nowomiejską oraz Piotrkowską – nazwaną od 1826 roku od nazwy traktu od Piotrkowa z 1821 roku. 
+		Układ północny Nowego Miasta to ulice Północna i Ogrodowa, a na południu zamykała je ulica Cegielniana zwana Podcegielnianą 
+		lub inaczej Pod Cegielnię. Od 1822 roku gwałtownie przeobraziło się Stare Miasto, które stało się siedzibą ludności 
+		wyznania mojżeszowego. Nazwy stworzone przez ludność wyznania mojżeszowego w tamtych latach nie odnajdziemy już na żadnych planach. 
+		Nazwy te różniły się od nazw polskich.
+		<br><br>
+		Porównanie nazw ulic po polsku i ludności wyznania mojżeszowego:
+		<br><br>
+		<div style="position:relative; left:100px;">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td class="tabela_1">Zgierska</td>
+				<td class="tabela_2">Zgierze gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_1">Brzezińska</td>
+				<td class="tabela_2">Brzeziner gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_1">Lutomierska</td>
+				<td class="tabela_2">Hoteł gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_1">Podrzeczna</td>
+				<td class="tabela_2">Jidisze gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_1">Drewnowska</td>
+				<td class="tabela_2">Pojlisze gas</td>
+			</tr>
+			<tr>
+				<td class="tabela_3">Wolborska</td>
+				<td class="tabela_4">Szil gas</td>
+			</tr>
+		</table>
+		</div>
+		<br>
+		Przy ulicy Wolborskiej powstała <u class="zabytki_1">synagoga w stylu mauretańskim</u>.
+		<br><br>
+		W latach 1824 – 1828 na wschód od Nowego Miasta rozwijała się <u class="zabytki_1">nowa osada przemysłowa dla tkaczy lnu i 
+		bawełny nazwana Łódką</u> i ciągnęła się wzdłuż ulicy Piotrkowskiej od ulicy Dzielnej do ulicy Pabianickiej. 
+		Wówczas przecznice Piotrkowskiej łączyły rozdzielone ogrodami ciągi domów i występowały mniej więcej co 300 m. 
+		Na ulicy Piotrkowskiej tuż za ulicą Główną, na obszarze dzisiejszego Centralu przy ulicy Żwirki znajdował się 
+		<u class="zabytki_1">prywatny park A. Hentschla Paradyz</u>. 
+		<br><br>
+		W 1841 roku pojawił się na planach miasta Plac Fabryczny na zachód od Piotrkowskiej, a w głębi znajdował się 
+		<u class="zabytki_1">szpital miejski św. Aleksandra</u>. Obecnie znajduje się tu, po przebudowie, Seminarium Duchowne. 
+		W 1902 roku wzniesiono tu kościół parafialny św. Stanisława Kostki – czyli dzisiejsza katedra. 
+		Plac Fabryczny zmienił nazwę na Plac Katedralny (od kilku lat im. Jana Pawła II). 
+		W tamtych czasach przy obecnej ulicy Tymienieckiego na wschodnim kierunku Piotrkowskiej powstała <u class="zabytki_1">Fabryka Geyera</u>, 
+		której to właściciel w 1839 roku uruchomił w Łodzi <u class="zabytki_1">pierwszą maszynę parową</u>.
+		Piotrkowska kończy się na <u class="zabytki_1">Górnym Rynku</u>, który istniał na planie z 1842 roku i był wtedy nazwany po prostu drugim rynkiem. 
+		Jeszcze przed wojną Górny Rynek nazwany był Placem Reymonta – inaczej Rynkiem Geyera.
+		<br><br>
+		Z XIX wieku zabytkami są m.in. <u class="zabytki_1">las miejski – dziś Park im. ks. J. Poniatowskiego</u>, <u class="zabytki_1">teatr polski</u> 
+		z 1901 roku otwarty na cześć noblisty Sienkiewicza, <u class="zabytki_1">ratusz</u> (1827) i <u class="zabytki_1">kościół ewangelicki</u>, 
+		<u class="zabytki_1">jatki Macroniego na Starym i Nowym Rynku</u>, 
+		<u class="zabytki_1">dom Jakuba Petersa</u> (1839), <u class="zabytki_1">Bielnik Kopischa</u> (1824 – 1828), 
+		<u class="zabytki_1">Biała Fabryka Geyera</u> (1835 – 1837) i <u class="zabytki_1">dworek Geyera</u> (1833). 
+		<br><br>
+		Do lat 20-tych XIX wieku Łódź posiada zabudowę wielkomiejską oraz osiedla robotnicze. 
+		Łódź – wtedy miasto przemysłowe z masowo napływającymi w celu polepszenia warunków życia ludźmi zaczęła się 
+		sukcesywnie rozrastać. Na początku XX wieku powstała łódzka secesja, która kształtowała wielkomiejski charakter miasta. 
+		Obecnie w Łodzi znajdziemy dużo <u class="zabytki_1">zabytkowych kamienic właśnie z okresów secesji</u>. Od czasów miedzywojennych do końca XX wieku 
+		Łódź awansowała społeczno – administracyjnie. Problemy gospodarcze miasta pod koniec lat 90-tych spowodowały zmianę z miasta 
+		drugiego pod względem wielkości w Polsce na trzecie, co nadal jest utrzymane do 2021 roku. Mimo tego Łódź jest jednym z 
+		największych miast w Polsce, której charakter miasta przemysłowego - włókienniczego zmienił się i Łódź stała się miastem studenckim oraz handlowym. 
+		Powstała tutaj bardzo duża ilość centrów handlowych, nowoczesnych hoteli i zmodernizowano Dworzec Łódź Fabryczna na najnowocześniejszy w Polsce, 
+		który będzie w przyszłości połączony metrem z dworcem Łódź Kaliska. W szkolnictwie wyższym powstały nowe dziedziny nauki  np. informatyka, automatyka. Znajduje się tutaj Politechnika Łódzka, Uniwersytet Łódzki, Uniwersytet Medyczny, 
+		Akademia Filmowa oraz szkolnictwo wyższe prywatne, duża ilość szpitali z Centrum Zdrowia Matki Polki, które było do końca XX wieku 
+		najnowocześniejszym szpitalem w tej części Europy.
+		Łódź ma dobrze rozwiniętą komunikację miejską oraz staje się coraz to ładniejszym miastem ze 
+		<u class="zabytki_1">stale odrestaurowywanymi zabytkami</u>. 
+		Jest nazwane miastem czterech kultur.
+	</header>
+	<footer>
+		<br>
+		<i><a href="http://historia.lodz.j.pl/zabytki-lodzi/">Odrestaurowane zabytki Łodzi</a></u>
+		<br><br>
+		--- tutaj wymieniam nazwy tych zabytków ---
+	</footer>
+</body>
